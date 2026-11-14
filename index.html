@@ -8,13 +8,21 @@
   <link rel="icon" href="./icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="./assets/index-DSC4BGgP.js"></script>
+  <script type="module" crossorigin src="./assets/index-DzYDEMWI.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/index.esm2017-DCz-gGOR.js">
   <link rel="modulepreload" crossorigin href="./assets/index.esm2017-CFsrK7Wu.js">
   <link rel="modulepreload" crossorigin href="./assets/index.esm-BMcgL5gI.js">
-  <link rel="stylesheet" crossorigin href="./assets/index-DuZb1SJP.css">
+  <link rel="stylesheet" crossorigin href="./assets/index-tMyyqTUs.css">
 </head>
 <body>
+  <!-- Liquid Glass: фильтр преломления — фон под стеклом «плывёт», как через толстую линзу -->
+  <svg width="0" height="0" style="position:absolute">
+    <filter id="lg" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.009" numOctaves="2" seed="7" result="n" />
+      <feGaussianBlur in="n" stdDeviation="2" result="nb" />
+      <feDisplacementMap in="SourceGraphic" in2="nb" scale="38" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
   <div id="app"></div>
 </body>
 </html>
